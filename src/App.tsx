@@ -92,6 +92,13 @@ import { getSuperAdminRouteFromHash, hasSuperAdminSession } from './lib/superAdm
 import { isRestaurantModuleEnabled } from './lib/restaurantFeature';
 import { parseRestaurantPublicTokenFromHash, parseRestaurantPublicTokenFromUrl, parseRestaurantViewFromHash, setRestaurantHash } from './lib/restaurantHash';
 import { isWebBrowserClient } from './lib/platform';
+import {
+  getAndroidDbStartupState,
+  initializeAndroidDbStartup,
+  retryAndroidDbStartup,
+  subscribeAndroidDbStartup,
+  type AndroidDbStartupState,
+} from './lib/androidDb/startup';
 
 const RestaurantModule = lazy(() => import('./modules/restaurant/RestaurantModule'));
 const RestaurantPublicMenuPage = lazy(() => import('./modules/restaurant/public/RestaurantPublicMenuPage'));
@@ -105,6 +112,7 @@ const ALERT_EVENT_NAME = 'shamel-alert';
 type ToastType = 'success' | 'error' | 'warning';
 
 const App: React.FC = () => {
+  const [androidDbStartupState, setAndroidDbStartupState] = useState<AndroidDbStartupState>(() => getAndroidDbStartupState());
   const isCustomerDisplayRoute =
     typeof window !== 'undefined' &&
     String(window.location.hash || '').toLowerCase().includes('customer-display');
@@ -208,6 +216,12 @@ const App: React.FC = () => {
     confirmState.resolve?.(false);
     setConfirmState((prev) => ({ ...prev, open: false }));
   }, [confirmState.resolve]));
+
+  useEffect(() => {
+    const unsubscribe = subscribeAndroidDbStartup(setAndroidDbStartupState);
+    void initializeAndroidDbStartup();
+    return unsubscribe;
+  }, []);
 
   // Global ESC event for page-level modals
   useEffect(() => {
@@ -1221,6 +1235,30 @@ const App: React.FC = () => {
       >
         <RestaurantPublicMenuPage publicToken={restaurantPublicToken} />
       </Suspense>
+    );
+  }
+  if (androidDbStartupState.platform === 'android' && (androidDbStartupState.status === 'idle' || androidDbStartupState.status === 'initializing')) {
+    return (
+      <div className="h-screen flex flex-col items-center justify-center bg-gray-900 gap-4 px-4 text-center">
+        <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+        <h1 className="text-white font-black text-xl">جاري تهيئة قاعدة البيانات المحلية</h1>
+        <p className="text-gray-300">يتم تجهيز SQLite وتشغيل migrations قبل بدء النظام.</p>
+      </div>
+    );
+  }
+  if (androidDbStartupState.platform === 'android' && androidDbStartupState.status === 'failed') {
+    return (
+      <div className="h-screen flex flex-col items-center justify-center bg-gray-900 gap-4 px-4 text-center">
+        <AlertCircle size={38} className="text-red-400" />
+        <h1 className="text-white font-black text-xl">فشل تهيئة قاعدة البيانات المحلية</h1>
+        <p className="text-red-200 max-w-2xl">{androidDbStartupState.error?.message || 'Unknown startup error'}</p>
+        <button
+          onClick={() => { void retryAndroidDbStartup(); }}
+          className="px-6 py-3 rounded-xl bg-primary text-white font-bold"
+        >
+          إعادة المحاولة
+        </button>
+      </div>
     );
   }
   if (backendError) {

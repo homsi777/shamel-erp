@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
+import { initializeAndroidDbStartup } from './lib/androidDb/startup';
 
 const ALERT_EVENT_NAME = 'shamel-alert';
 if (typeof window !== 'undefined') {
@@ -36,4 +37,5 @@ class ErrorBoundary extends React.Component<EBProps, EBState> {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
+void initializeAndroidDbStartup();
 root.render(<ErrorBoundary><App /></ErrorBoundary>);
