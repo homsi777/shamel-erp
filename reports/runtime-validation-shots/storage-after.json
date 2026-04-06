@@ -1,0 +1,66 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "http://127.0.0.1:5173",
+      "localStorage": [
+        {
+          "name": "shamel_app_mode",
+          "value": "standalone"
+        },
+        {
+          "name": "shamel_has_org",
+          "value": "1"
+        },
+        {
+          "name": "shamel_sync_enabled",
+          "value": "0"
+        },
+        {
+          "name": "shamel_orgs_list",
+          "value": "[{\"id\":\"org-main\",\"name\":\"Homsi\",\"type\":\"company\",\"primaryCurrency\":\"USD\",\"createdAt\":\"2026-04-03 22:16:55.323929+03\",\"address\":\"\",\"phone\":\"\",\"mode\":\"local\",\"activeModules\":[],\"config\":{\"mainWarehouseName\":\"Main Warehouse\",\"mainCashBoxName\":\"Main Cash Box\",\"defaultUnit\":\"pcs\"}}]"
+        },
+        {
+          "name": "shamel_offline_queue",
+          "value": "[]"
+        },
+        {
+          "name": "shamel_activation_type",
+          "value": "trial"
+        },
+        {
+          "name": "shamel_activated",
+          "value": "1"
+        },
+        {
+          "name": "shamel_activation_mission",
+          "value": "TRIAL"
+        },
+        {
+          "name": "shamel_activation_meta",
+          "value": "{\"activationType\":\"trial\",\"activationMission\":\"TRIAL\",\"appMode\":\"standalone\",\"serverAddress\":\"\",\"syncEnabled\":false,\"deferred\":false,\"updatedAt\":\"2026-04-06T01:10:52.931Z\"}"
+        },
+        {
+          "name": "shamel_active_org",
+          "value": "org-main"
+        },
+        {
+          "name": "shamel_setup_done",
+          "value": "1"
+        },
+        {
+          "name": "shamel_sync_logs",
+          "value": "[]"
+        },
+        {
+          "name": "selected_company_id",
+          "value": "org-main"
+        },
+        {
+          "name": "shamel_deployment_config",
+          "value": "{\"mode\":\"standalone\",\"role\":\"standalone\",\"apiBaseUrl\":null,\"canOwnBackend\":true,\"canOwnDatabase\":true,\"allowLocalUsbPrinting\":true}"
+        }
+      ]
+    }
+  ]
+}

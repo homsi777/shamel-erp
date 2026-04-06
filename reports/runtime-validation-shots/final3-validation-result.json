@@ -1,0 +1,55 @@
+{
+  "login": {
+    "ok": true,
+    "contextHint": "Homsi"
+  },
+  "inventory": [
+    {
+      "width": 360,
+      "cardCount": 4,
+      "rowGridCount": 0,
+      "overflow": false,
+      "screenshot": "C:\\Users\\Homsi\\Desktop\\PostgreSQL 16 to apk\\reports\\runtime-validation-shots\\final3-inventory-360.png"
+    },
+    {
+      "width": 768,
+      "cardCount": 0,
+      "rowGridCount": 5,
+      "overflow": false,
+      "screenshot": "C:\\Users\\Homsi\\Desktop\\PostgreSQL 16 to apk\\reports\\runtime-validation-shots\\final3-inventory-768.png"
+    },
+    {
+      "width": 1024,
+      "cardCount": 0,
+      "rowGridCount": 5,
+      "overflow": false,
+      "screenshot": "C:\\Users\\Homsi\\Desktop\\PostgreSQL 16 to apk\\reports\\runtime-validation-shots\\final3-inventory-1024.png"
+    }
+  ],
+  "reports": [
+    {
+      "width": 360,
+      "hasCoreArabic": true,
+      "hasSearchPlaceholder": true,
+      "hasGarbled": false,
+      "overflow": false,
+      "screenshot": "C:\\Users\\Homsi\\Desktop\\PostgreSQL 16 to apk\\reports\\runtime-validation-shots\\final3-reports-360.png"
+    },
+    {
+      "width": 768,
+      "hasCoreArabic": true,
+      "hasSearchPlaceholder": true,
+      "hasGarbled": false,
+      "overflow": false,
+      "screenshot": "C:\\Users\\Homsi\\Desktop\\PostgreSQL 16 to apk\\reports\\runtime-validation-shots\\final3-reports-768.png"
+    },
+    {
+      "width": 1024,
+      "hasCoreArabic": true,
+      "hasSearchPlaceholder": true,
+      "hasGarbled": false,
+      "overflow": false,
+      "screenshot": "C:\\Users\\Homsi\\Desktop\\PostgreSQL 16 to apk\\reports\\runtime-validation-shots\\final3-reports-1024.png"
+    }
+  ]
+}

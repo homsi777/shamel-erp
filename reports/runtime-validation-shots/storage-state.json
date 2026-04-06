@@ -1,0 +1,44 @@
+{
+    "cookies":  [
+
+                ],
+    "origins":  [
+                    {
+                        "origin":  "http://127.0.0.1:5173",
+                        "localStorage":  [
+                                             {
+                                                 "value":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InUtYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJjb21wYW55SWQiOiJvcmctbWFpbiIsImFsbG93ZWRDb21wYW55SWRzIjpbIm9yZy1tYWluIl0sImFsbG93ZWRCcmFuY2hJZHMiOlsiYnItbWFpbiJdLCJkZWZhdWx0QnJhbmNoSWQiOiJici1tYWluIiwiY3VycmVudEJyYW5jaElkIjoiYnItbWFpbiIsImJyYW5jaFNjb3BlIjoiY29tcGFueV93aWRlIiwiaGFzTXVsdGlDb21wYW55Q2FwYWJpbGl0eSI6dHJ1ZSwiY29tcGFueVZpc2liaWxpdHlNb2RlIjoiYWxsb3dlZF9tdWx0aSIsImlhdCI6MTc3NTQzNzc2OH0.oLTmjxHvrUyIJf3ubejXT2hPEgXI0drl47BSUgGhLGI",
+                                                 "name":  "shamel_token"
+                                             },
+                                             {
+                                                 "value":  "{\"id\":\"u-admin\",\"username\":\"admin\",\"name\":\"admin\",\"role\":\"admin\",\"permissions\":[\"view_inventory\",\"manage_inventory\",\"price_edit\",\"price_bulk_edit\",\"exchange_rate_update\",\"group_manage\",\"item_merge\",\"view_cost_price\",\"manage_stocktaking\",\"manage_delivery_notices\",\"approve_delivery_notices\",\"access_pos\",\"pos_only\",\"pos_cashier\",\"manage_pos_currency\",\"auto_print_pos_receipt\",\"agent_mode_restricted\",\"create_sale_invoice\",\"create_purchase_invoice\",\"manage_clients\",\"view_funds\",\"manage_vouchers\",\"view_profits\",\"manage_partners\",\"view_accounts\",\"manage_accounts\",\"manage_expenses\",\"view_employees\",\"manage_employees\",\"manage_payroll\",\"view_recipes\",\"manage_recipes\",\"manage_production\",\"manage_agents\",\"manage_users\",\"manage_settings\",\"view_reports\",\"manage_units\",\"manage_invoice_movements\",\"view_consignments\",\"view_restaurant_module\",\"manage_restaurant_tables\",\"manage_restaurant_sessions\",\"view_textile_dispatch_module\",\"open_textile_dispatch_document\",\"manage_textile_dispatch_requests\",\"decompose_textile_dispatch\",\"update_textile_dispatch_preparation\",\"confirm_textile_dispatch_preparation\",\"print_textile_dispatch_document\",\"view_textile_stock_context\",\"approve_textile_dispatch\",\"convert_textile_dispatch_to_invoice\"],\"companyId\":\"org-main\",\"defaultBranchId\":\"br-main\",\"currentBranchId\":\"br-main\",\"allowedBranchIds\":[\"br-main\"],\"requiresBranchSelection\":false,\"branchScope\":\"company_wide\",\"allowedCompanyIds\":[\"org-main\"],\"hasMultiCompanyCapability\":true,\"companyVisibilityMode\":\"allowed_multi\",\"posWarehouseId\":null,\"posWarehouseName\":null,\"isActive\":true}",
+                                                 "name":  "shamel_user"
+                                             },
+                                             {
+                                                 "value":  "org-main",
+                                                 "name":  "selected_company_id"
+                                             },
+                                             {
+                                                 "value":  "org-main",
+                                                 "name":  "shamel_active_org"
+                                             },
+                                             {
+                                                 "value":  "br-main",
+                                                 "name":  "selected_branch_id"
+                                             },
+                                             {
+                                                 "value":  "br-main",
+                                                 "name":  "shamel_active_branch"
+                                             },
+                                             {
+                                                 "value":  "1",
+                                                 "name":  "shamel_has_org"
+                                             },
+                                             {
+                                                 "value":  "1",
+                                                 "name":  "shamel_activated"
+                                             }
+                                         ]
+                    }
+                ]
+}

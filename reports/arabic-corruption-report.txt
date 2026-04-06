@@ -1,0 +1,10 @@
+Arabic Corruption Scan Report
+Generated At: 2026-04-06T05:18:25.037Z
+Mode: scan
+Warn Only: yes
+Scanned Files: 453
+Convertible Findings: 0
+Unresolved Suspects: 0
+Changed Files: 0
+
+No Arabic mojibake indicators found.
