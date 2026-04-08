@@ -1,0 +1,18 @@
+04-06 10:02:28.486 25385 25385 D Capacitor: Registering plugin instance: CapacitorSQLite
+04-06 10:02:29.071 25385 25385 I Capacitor/Console: File: http://localhost/assets/index-C5TE9M55.js - Line 1218 - Msg: [android-db-startup] initialization_started
+04-06 10:02:29.072 25385 25465 V Capacitor/Plugin: To native (Capacitor plugin): callbackId: 113454745, pluginId: CapacitorSQLite, methodName: checkConnectionsConsistency
+04-06 10:02:29.072 25385 25465 V Capacitor: callback: 113454745, pluginId: CapacitorSQLite, methodName: checkConnectionsConsistency, methodData: {"dbNames":[],"openModes":[]}
+04-06 10:02:29.093 25385 25465 V Capacitor/Plugin: To native (Capacitor plugin): callbackId: 113454746, pluginId: CapacitorSQLite, methodName: createConnection
+04-06 10:02:29.093 25385 25465 V Capacitor: callback: 113454746, pluginId: CapacitorSQLite, methodName: createConnection, methodData: {"database":"shamel_android_offline","encrypted":false,"mode":"no-encryption","version":1,"readonly":false}
+04-06 10:02:29.129 25385 25465 V Capacitor/Plugin: To native (Capacitor plugin): callbackId: 113454747, pluginId: CapacitorSQLite, methodName: isDBOpen
+04-06 10:02:29.129 25385 25465 V Capacitor: callback: 113454747, pluginId: CapacitorSQLite, methodName: isDBOpen, methodData: {"database":"shamel_android_offline","readonly":false}
+04-06 10:02:29.139 25385 25465 V Capacitor/Plugin: To native (Capacitor plugin): callbackId: 113454748, pluginId: CapacitorSQLite, methodName: open
+04-06 10:02:29.139 25385 25465 V Capacitor: callback: 113454748, pluginId: CapacitorSQLite, methodName: open, methodData: {"database":"shamel_android_offline","readonly":false}
+04-06 10:02:29.150 25385 25465 V Capacitor/Plugin: To native (Capacitor plugin): callbackId: 113454749, pluginId: CapacitorSQLite, methodName: execute
+04-06 10:02:29.150 25385 25465 V Capacitor: callback: 113454749, pluginId: CapacitorSQLite, methodName: execute, methodData: {"database":"shamel_android_offline","statements":"PRAGMA foreign_keys = ON;","transaction":false,"readonly":false,"isSQL92":true}
+04-06 10:02:29.156 25385 25465 V Capacitor/Plugin: To native (Capacitor plugin): callbackId: 113454750, pluginId: CapacitorSQLite, methodName: execute
+04-06 10:02:29.157 25385 25465 V Capacitor: callback: 113454750, pluginId: CapacitorSQLite, methodName: execute, methodData: {"database":"shamel_android_offline","statements":"PRAGMA journal_mode = WAL;","transaction":false,"readonly":false,"isSQL92":true}
+04-06 10:02:29.159 25385 25459 V com.getcapacitor.community.database.sqlite.RetHandler: *** ERROR Execute: unknown error: Queries cannot be performed using execSQL(), use query() instead.
+04-06 10:02:29.159 25385 25459 D Capacitor: Sending plugin error: {"save":false,"callbackId":"113454750","pluginId":"CapacitorSQLite","methodName":"execute","success":false,"error":{"message":"Execute: unknown error: Queries cannot be performed using execSQL(), use query() instead."}}
+04-06 10:02:29.165 25385 25385 E Capacitor/Console: File: http://localhost/assets/index-C5TE9M55.js - Line 1218 - Msg: [android-db-startup] initialization_failed [object Object]
+04-06 10:02:38.710 25385 25385 E Capacitor/Console: File: http://localhost/assets/index-C5TE9M55.js - Line 1219 - Msg: ? Backend readiness gate failed after maximum retries
